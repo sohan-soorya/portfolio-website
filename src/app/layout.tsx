@@ -8,8 +8,8 @@ const mono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono', dis
 
 export const metadata: Metadata = {
   title: { default: "Soorya — Full-stack software engineer", template: "%s — Soorya" },
-  description: "Full-stack healthcare software, from interface to infrastructure. Explore Soorya's work in pharmacy management, hospital analytics, and AI systems.",
-  openGraph: { title: "Soorya — Full-stack software engineer", description: "Thoughtful interfaces. Connected systems. Explore my work in healthcare software, analytics, and AI.", type: 'website' },
+  description: "Full-stack product engineering across thoughtful interfaces, connected systems, data, and AI. Explore Soorya's work.",
+  openGraph: { title: "Soorya — Full-stack software engineer", description: "Thoughtful interfaces. Connected systems. Explore Soorya's work across product engineering, data, and AI.", type: 'website' },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
