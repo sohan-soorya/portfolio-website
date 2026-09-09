@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Soorya's portfolio
 
-## Getting Started
+A Next.js portfolio with a Product Studio homepage, an interactive pharmacy batch-selection example, and three engineering case studies.
 
-First, run the development server:
+## Local development
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+Use pnpm and Node.js 24 (the runtime used to validate this project).
+
+```sh
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site is available at `http://localhost:3000`. Next.js downloads Geist fonts during the initial development/production compilation and serves them locally to visitors. The build environment needs access to Google Fonts for an uncached compilation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Checks
 
-## Learn More
+```sh
+pnpm test
+pnpm lint
+pnpm build
+git diff --check
+```
 
-To learn more about Next.js, take a look at the following resources:
+The dependency-free quantity check covers invalid values, stock limits, and retaining a requested quantity when switching batches. Browser verification also covers the native radio controls, error feedback, navigation, and responsive pages.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content and design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `DESIGN.md`: approved visual, interaction, accessibility, and responsive specification.
+- `PORTFOLIO_REVIEW.md`: local evidence, content research, and original direction exploration.
+- `src/lib/projects.ts`: shared project facts and case-study narratives.
+- `src/components/pharmacy-demo.tsx`: the small client-side interactive example. Its records are fictional and it makes no remote requests.
+- `src/app/work/[slug]/page.tsx`: statically generated case-study pages.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The old `/prototypes/portfolio` URL redirects to the homepage. Product illustrations are labelled examples rather than screenshots of live systems. React Compiler remains enabled. No extra UI or animation dependency is required.
