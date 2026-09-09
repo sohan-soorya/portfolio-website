@@ -81,6 +81,8 @@ Proposed copy:
 >
 > I'm Soorya. I build healthcare software: pharmacy workflows, hospital analytics, and AI tools for reviewing patient records.
 
+The hero uses broader positioning: “I'm Soorya. I build thoughtful products across interfaces, APIs, data, and AI—turning complicated systems into software people can use.” Healthcare remains the evidence-rich context in the selected work and case studies.
+
 Emphasize “everything behind it” with the restrained italic treatment from the selected study. Keep the product names and plain-language purpose close to the headline so the opening is concrete.
 
 Primary action: Explore my work. Secondary action: Download résumé.

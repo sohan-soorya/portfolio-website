@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main id="main">
       <section className="container hero" aria-labelledby="hero-title">
-        <div className="hero-copy"><p className="eyebrow hero-eyebrow"><span className="tiny-square" aria-hidden="true" /> Full-stack software engineer</p><h1 id="hero-title">From the interface<br />to <em>everything<br />behind it.</em></h1><p className="hero-intro">I&apos;m Soorya. I build healthcare software: pharmacy workflows, hospital analytics, and AI tools for reviewing patient records.</p><div className="hero-actions"><a className="button" href="#work">Explore my work <Arrow /></a><a className="text-link" href={resumeUrl} download>Download résumé <span aria-hidden="true">↓</span></a></div></div>
+        <div className="hero-copy"><p className="eyebrow hero-eyebrow"><span className="tiny-square" aria-hidden="true" /> Full-stack software engineer</p><h1 id="hero-title">From the interface<br />to <em>everything<br />behind it.</em></h1><p className="hero-intro">I&apos;m Soorya. I build thoughtful products across interfaces, APIs, data, and AI—turning complicated systems into software people can use.</p><div className="hero-actions"><a className="button" href="#work">Explore my work <Arrow /></a><a className="text-link" href={resumeUrl} download>Download résumé <span aria-hidden="true">↓</span></a></div></div>
         <PharmacyDemo />
         <div className="hero-bottom"><span>Interfaces people use.<br className="mobile-break" /> Systems they depend on.</span><a href="#work" aria-label="Scroll to selected work">Selected work <span aria-hidden="true">↓</span></a></div>
       </section>
