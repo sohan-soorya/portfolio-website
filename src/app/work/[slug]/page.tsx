@@ -14,7 +14,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const project = projects.find((project) => project.slug === slug);
   if (!project) notFound();
-  return { title: project.title, description: project.summary, openGraph: { title: `${project.title} — Soorya`, description: project.summary, type: 'article' } };
+  return {
+    title: project.title,
+    description: project.summary,
+    alternates: { canonical: `/work/${project.slug}` },
+    openGraph: { title: `${project.title} — Soorya`, description: project.summary, type: 'article', url: `/work/${project.slug}` },
+  };
 }
 
 export default async function CaseStudy({ params }: { params: Promise<{ slug: string }> }) {
