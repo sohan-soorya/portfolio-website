@@ -2,11 +2,25 @@ import Link from 'next/link';
 import { PharmacyDemo } from '@/components/pharmacy-demo';
 import { Arrow, ProductVisual, Workflow, resumeUrl } from '@/components/portfolio';
 import { projects } from '@/lib/projects';
+import { siteUrl } from '@/lib/site';
 import { ContextSection, DecisionTable, ResumeSection, WorkingNotes, WorkingThesis } from '@/components/studio-sections';
 
 export default function Home() {
+  const person = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Sohan Soorya Keshava',
+    url: siteUrl.origin,
+    jobTitle: 'Full-stack software engineer',
+    sameAs: [
+      'https://github.com/sohan-soorya',
+      'https://www.linkedin.com/in/sohan-soorya-keshava/',
+    ],
+  };
+
   return (
     <main id="main">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
       <section className="container hero" aria-labelledby="hero-title">
         <div className="hero-copy"><p className="eyebrow hero-eyebrow"><span className="tiny-square" aria-hidden="true" /> Full-stack software engineer</p><h1 id="hero-title">From the interface<br />to <em>everything<br />behind it.</em></h1><p className="hero-intro">I&apos;m Soorya. I build thoughtful products across interfaces, APIs, data, and AI—turning complicated systems into software people can use.</p><div className="hero-actions"><a className="button" href="#work">Explore my work <Arrow /></a><a className="text-link" href={resumeUrl} download>Download résumé <span aria-hidden="true">↓</span></a></div></div>
         <PharmacyDemo />

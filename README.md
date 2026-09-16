@@ -2,6 +2,8 @@
 
 A Next.js portfolio with a Product Studio homepage, an interactive pharmacy batch-selection example, and three engineering case studies.
 
+Set `NEXT_PUBLIC_SITE_URL` to the canonical production origin (for example, `https://example.com`) so canonical links, the sitemap, and social metadata use the public domain. Vercel deployments fall back to `VERCEL_PROJECT_PRODUCTION_URL` automatically.
+
 ## Local development
 
 Use pnpm and Node.js 24 (the runtime used to validate this project).
